@@ -47,10 +47,39 @@
 
 }
 
-.banner-container h1 {
+h1 {
     font-size: 3.125rem;
 }
 
-.banner-container h2 {
+h2 {
     font-size: 1.625rem;
 }
+
+.info-container {
+    display: flex;
+    background: black;
+    color: white;
+    align-items: center;
+    position: relative;
+    padding: 45px 70px;
+    border-top: solid #222222 10px;
+    /* border-bottom: solid #222222 10px; */
+}
+
+.tv-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.tv {
+    position: relative;
+    z-index: 1;
+}
+
+.video {
+    position: absolute;
+    top: 20%;
+}
+
+
