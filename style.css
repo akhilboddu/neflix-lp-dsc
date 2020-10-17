@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap);
 
-* {
+* { 
     font-family: 'Open Sans', san-serif;
     font-size: 16px;
     box-sizing: border-box;
@@ -14,6 +14,20 @@
     background-size: cover;
     background-position: center;
     height: 80vh;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-wrap::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    content: '';
+    z-index: -1;
+
 }
 
 .nav-bar {
@@ -21,6 +35,7 @@
     justify-content: space-between;
     padding-top: 20px;
     margin: 0 56px;
+    height: 55px;
 }
 
 .nav-bar .logo img{
@@ -44,14 +59,53 @@
     align-items: center;
     justify-content: center;
     padding: 70px 45px;
+    height: calc(100% - 55px)
 
 }
 
 h1 {
-    font-size: 3.125rem;
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 16px 75px;
 }
 
 h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 16px 75px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.get-started {
+    padding-top: 0.85rem;
+}
+
+.get-started form {
+    height: 60px;
+    display: flex;
+
+}
+.get-started input{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px; 
+    border: none;
+    width: 450px;
+}
+
+.get-started .btn {
+    background-color: #e50914;
+    width: 248px;
+    padding: 0px 26px;
+    border: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    color: white;
     font-size: 1.625rem;
 }
 
